@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy MrLwitwma a Cup of Coffee and Some Cookies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="holder" id="holder"></div>
+    <div class="container" id="container">
+        <h1>Buy Me a Cup of Coffee?</h1>
+        <div class="coffee">
+            <div class="value" id="remove-coffee">-</div>
+            <div class="number" id="coffee">0</div>
+            <div class="value" id="add-coffee">+</div>
+        </div>
+        <h1>Buy Me some Cookies?</h1>
+        <div class="cookie">
+            <div class="value" id="remove-cookie">-</div>
+            <div class="number" id="cookie">0</div>
+            <div class="value" id="add-cookie">+</div>
+        </div>
+        <button id="submit">Buy</button>
+    </div>
+    <div id="paymentWindow">
+        <div id="back">&laquo;Back</div>
+        <input type="text" placeholder="Name(required)" id="name" required>
+        <h4>Payment method</h4>
+        <select name="payment" id="paymentMethod" required>
+            <option value="qrcode">QrCode</option>
+            <!-- <option value="upi">UPI</option> -->
+            <!-- <option value="link">Click Link to Pays</option> -->
+        </select>
+        <h3>Payment Amount: <span id="amount">$0</span></h3>
+        <button id="pay">Continue Payment</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
